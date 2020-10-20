@@ -1,0 +1,1 @@
+# django-contenttype-usage
