@@ -39,37 +39,3 @@ class TaggedItemSerializer(serializers.ModelSerializer):
     class Meta:
         model = TaggedItem
         fields = ('id', 'slug', 'tagged_object')
-
-"""class TaggedObjectRelatedField(serializers.ModelSerializer):
-
-    class Meta:
-        model = TaggedItem
-        fields = '__all__'
-       
-    def to_representation(self, value):
-        print("")
-        print("")
-        print("")
-        print("")
-        print("")
-        print("")
-        print("")
-        print("")
-        print(value.content_type)
-        print(value.object_id)
-        print("")
-        print("")
-        print("")
-        print("")
-        print("")
-        print("")
-        print("")
-        if isinstance(value.content_type, Bookmark):
-            serializer = BookmarkSerializer(value)
-        elif isinstance(value.content_type, Note):
-            serializer = NoteSerializer(value)
-        else:
-            raise Exception('Unexpected type of tagged object')
-
-        return serializer.data
-"""
